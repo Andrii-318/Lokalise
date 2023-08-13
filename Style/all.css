@@ -179,9 +179,7 @@ h1 {
 
 .visual-img .img-1 {
   width: 100%;
-
   height: auto;
-  /* object-fit: contain; */
   object-fit: cover;
 }
 
@@ -213,13 +211,14 @@ h2 {
 
 .article-block {
   margin-top: 100px;
+  /* margin-bottom: 100px; */
 }
 .article-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* margin-top: 250px; */
   min-height: 632px;
+  padding: 5px;
 }
 
 .h2-article {
@@ -254,6 +253,7 @@ span {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   min-height: 632px;
+  padding: 5px;
 }
 .article-content {
   width: 632px;
@@ -285,7 +285,7 @@ span {
 .interactive-block {
   width: 100%;
   background: var(--bg-interactyve-block);
-  margin-top: 150px;
+  margin-top: 100px;
   padding-bottom: 93px;
 }
 .interactive-box {
