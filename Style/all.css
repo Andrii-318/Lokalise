@@ -191,7 +191,8 @@ h1 {
   width: 100%;
   background-color: var(--whit-orange);
   margin-top: 182px;
-  padding: 15px;
+  padding-top: 98px;
+  padding-bottom: 94px;
 }
 h2 {
   color: #000;
@@ -200,17 +201,16 @@ h2 {
   font-weight: 600;
   line-height: 60px;
   margin-bottom: 70px;
-  margin-top: 98px;
 }
 .logo-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 /* article-section */
+
 .article-block {
   margin-top: 100px;
 }
@@ -218,7 +218,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 250px;
+  /* margin-top: 250px; */
+  min-height: 632px;
 }
 
 .h2-article {
@@ -252,7 +253,7 @@ span {
   justify-content: space-between;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  margin-top: 250px;
+  min-height: 632px;
 }
 .article-content {
   width: 632px;
@@ -295,10 +296,8 @@ span {
   align-content: center;
 }
 .interactive-card {
-  width: 330px;
-  padding-top: 58px;
+  max-width: 330px;
   padding-bottom: 57px;
-  padding: 40px;
   text-align: center;
 }
 .h2-interactive {
@@ -327,9 +326,12 @@ h3 {
 }
 .localization-card {
   padding-top: 58px;
-  padding-bottom: 57px;
-
   text-align: left;
+}
+.h2-interactive2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 54px;
 }
 .localization-p {
   font-size: 20px;
@@ -559,7 +561,7 @@ footer {
   border-top: 1px solid var(--border-footer);
   margin-top: 95px;
 }
-.logo-box {
+.logo-box-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
