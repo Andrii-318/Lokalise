@@ -211,14 +211,13 @@ h2 {
 
 .article-block {
   margin-top: 100px;
-  /* margin-bottom: 100px; */
 }
 .article-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 632px;
-  padding: 5px;
+  min-height: 100vh;
+  padding: 70px 0;
 }
 
 .h2-article {
@@ -252,8 +251,8 @@ span {
   justify-content: space-between;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  min-height: 632px;
-  padding: 5px;
+  min-height: 100vh;
+  padding: 70px 0px;
 }
 .article-content {
   width: 632px;
