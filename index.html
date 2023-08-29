@@ -6,6 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>Lokalise</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <link
       rel="stylesheet"
       href="Style/all.css" />
@@ -13,66 +18,71 @@
   <body>
     <header>
       <div class="logo-nav container">
-        <ul class="nav">
-          <li class="nav-list">
-            <a
-              class="nav-link"
-              href="#"
-              ><img
-                src="images/logo.svg"
-                alt="logo"
-            /></a>
-          </li>
-          <li class="nav-list">
-            <a
-              class="nav-link"
-              nav-link
-              href="#"
-              >Product</a
-            >
-          </li>
-          <li class="nav-list">
-            <a
-              class="nav-link"
-              nav-link
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-list">
-            <a
-              class="nav-link"
-              nav-link
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-list">
-            <a
-              class="nav-link"
-              nav-link
-              href="#"
-              >Case studies</a
-            >
-          </li>
-          <li class="nav-list">
-            <a
-              class="nav-link"
-              nav-link
-              href="#"
-              >Resources</a
-            >
-          </li>
-        </ul>
+        <a
+          class="nav-link"
+          href="#"
+          ><img
+            src="images/logo.svg"
+            alt="logo"
+        /></a>
+        <div class="header-nav">
+          <button class="nav-opener">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav">
+            <li class="nav-list">
+              <a
+                class="nav-link"
+                nav-link
+                href="#"
+                >Product</a
+              >
+            </li>
+            <li class="nav-list">
+              <a
+                class="nav-link"
+                nav-link
+                href="#"
+                >Features</a
+              >
+            </li>
+            <li class="nav-list">
+              <a
+                class="nav-link"
+                nav-link
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-list">
+              <a
+                class="nav-link"
+                nav-link
+                href="#"
+                >Case studies</a
+              >
+            </li>
+            <li class="nav-list">
+              <a
+                class="nav-link"
+                nav-link
+                href="#"
+                >Resources</a
+              >
+            </li>
+          </ul>
 
-        <ul class="nav-btn">
-          <li>
-            <button class="nav-btn-1">Log in</button>
-          </li>
-          <li>
-            <button class="nav-btn-2">Try it free</button>
-          </li>
-        </ul>
+          <ul class="nav-btn">
+            <li>
+              <button class="nav-btn-1 button">Log in</button>
+            </li>
+            <li>
+              <button class="nav-btn-2 button">Try it free</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -91,8 +101,8 @@
             transparency, and fast project delivery.
           </p>
           <div class="visual-btn">
-            <button class="visual-btn1">Try it free</button>
-            <button class="visual-btn2">Book a demo</button>
+            <button class="visual-btn1 button">Try it free</button>
+            <button class="visual-btn2 button">Book a demo</button>
           </div>
           <p class="visual-txt">
             Try all features for 14 days · No credit card required
@@ -168,8 +178,8 @@
             <li>
               <p class="article-p">
                 Collaborate with your team in a single workspace. <br />
-                Add and assign <span><a href="#">tasks</a></span
-                >, track progress, and enjoy a <br />
+                Add and assign <a href="#">tasks</a>, track progress, and enjoy
+                a <br />
                 seamless localization workflow where you know <br />
                 who is doing what and when.
               </p>
@@ -203,11 +213,8 @@
               <p class="article-p">
                 Localize your product in parallel with the <br />
                 development cycle. Use the
-                <span><a href="#">Adobe XD</a></span> ,
-                <span><a href="#">Figma</a></span
-                >,<br />
-                and <span><a href="#">Sketch</a></span> plugins to start working
-                on <br />
+                <a href="#">Adobe XD</a> , <a href="#">Figma</a>,<br />
+                and <a href="#">Sketch</a> plugins to start working on <br />
                 translations as soon as the product design is <br />
                 ready. No more idle waiting.
               </p>
@@ -237,12 +244,12 @@
             <li>
               <p class="article-p">
                 Use built-in tools — e.g.
-                <span><a href="#">translation memory,</a></span> machine <br />
-                translation, and <span><a href="#">QA checks</a></span> — to
-                enhance the quality <br />
+                <a href="#">translation memory,</a> machine <br />
+                translation, and <a href="#">QA checks</a> — to enhance the
+                quality <br />
                 and cohesion of translations. Add product <br />
-                <span><a href="#">screenshots</a></span> for context and use the
-                <span><a href="#">in-context editors</a></span> <br />
+                <a href="#">screenshots</a> for context and use the
+                <a href="#">in-context editors</a> <br />
                 for instant previews.
               </p>
             </li>
@@ -275,14 +282,10 @@
               <p class="article-p">
                 Eliminate the hassle of localization and let developers <br />
                 get back to their main tasks. Save hours with the <br />
-                powerful <span><a href="#">API</a></span
-                >, <span><a href="#">CLI</a></span
-                >, <span><a href="#">mobile SDKs</a></span
-                >, and integrations with <br />
-                <span><a href="#">GitHub</a></span
-                >, <span><a href="#">Bitbucket</a></span
-                >, <span><a href="#">JIRA</a></span
-                >, and more.
+                powerful <a href="#">API</a>, <a href="#">CLI</a>,
+                <a href="#">mobile SDKs</a>, and integrations with <br />
+                <a href="#">GitHub</a>, <a href="#">Bitbucket</a>,
+                <a href="#">JIRA</a>, and more.
               </p>
             </li>
             <li>
@@ -326,8 +329,8 @@
             <h3>Mobile apps</h3>
             <p class="interactive-p">
               Upload any mobile platform language files. Embed
-              <span><a href="#">Lokalise iOS SDK</a></span> or
-              <span><a href="#">Lokalise Android SDK</a></span> if you prefer.
+              <a href="#">Lokalise iOS SDK</a> or
+              <a href="#">Lokalise Android SDK</a> if you prefer.
             </p>
           </li>
           <li class="interactive-card">
@@ -537,7 +540,7 @@
               alt="Integrate" />
           </li>
           <li class="bird-list">
-            <button class="bird-btn">See all integrations</button>
+            <button class="bird-btn button">See all integrations</button>
           </li>
         </ul>
       </div>
@@ -556,7 +559,7 @@
               and track progress with ease.
             </p>
           </li>
-          <li><button class="bird-btn2">Try it free</button></li>
+          <li><button class="bird-btn2 button">Try it free</button></li>
         </ul>
       </div>
     </main>

@@ -31,8 +31,13 @@ body {
   background: #ffffff;
   color: #000;
 }
+a {
+  color: var(--clor-txt);
+  text-decoration: underline;
+}
 a:hover {
   color: var(--orange);
+  text-decoration: none;
 }
 
 /* header */
@@ -51,24 +56,28 @@ header {
 .logo-nav {
   max-width: 1290px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 51px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+  position: relative;
 }
 .nav {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
 }
-.nav-list {
-  padding-top: 34px;
-  padding-bottom: 33px;
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-link {
   font-size: 15px;
   font-weight: 400;
   color: var(--clor-txt);
-  padding-right: 51px;
+  text-decoration: none;
 }
 .logo-btn {
   display: flex;
@@ -76,6 +85,23 @@ header {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-content: center;
+}
+.nav-opener {
+  display: none;
+  border: var(--bg-cake) 1px solid;
+  border-radius: 5px;
+  width: 50px;
+  height: 40px;
+}
+.nav-opener span {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--border-footer);
+  margin: 0 auto;
+}
+.nav-opener span + span {
+  margin-top: 10px;
 }
 .nav-btn-1 {
   background: var(--border-header);
@@ -104,7 +130,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-button {
+.button {
   width: 120px;
   height: 45px;
 }
@@ -234,17 +260,14 @@ h2 {
   line-height: 24px;
   margin-bottom: 30px;
 }
-span {
-  cursor: pointer;
-  color: var(--clor-txt);
-  text-decoration: underline;
-}
+
 .article-link {
   color: var(--clor-txt);
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
   cursor: pointer;
+  text-decoration: none;
 }
 .article-section-revers {
   display: flex;
@@ -575,4 +598,151 @@ footer {
   font-weight: 400;
   line-height: 15px;
   padding-left: 14px;
+}
+@media screen and (max-width: 1099px) {
+  .nav-opener {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .header-nav.active .nav {
+    display: inline-flex;
+    position: absolute;
+    /* left: 16px; */
+    top: 159px;
+    background: var(--bg-footer);
+    border: 1px solid var(--orange);
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    max-width: 310px;
+  }
+  .header-nav {
+    flex-grow: 0;
+  }
+  .logo-nav {
+    justify-content: space-between;
+  }
+  .nav-btn {
+    margin-left: 10px;
+  }
+  .visual-block {
+    flex-direction: column;
+  }
+  .visual-section {
+    order: 1;
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 39px;
+  }
+  .h2-article,
+  .h2-interactive,
+  .h2-interactive2 {
+    font-size: 35px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .cake-title {
+    font-size: 25px;
+    line-height: 29px;
+    padding-left: 30px;
+  }
+  .bird-title {
+    font-size: 37px;
+    line-height: 41px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .h5 {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .bird-btn {
+    margin-bottom: 100px;
+  }
+  .visual-p,
+  .localization-p,
+  .article-p,
+  .bird-p,
+  .revolut-p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .breadcrumbs {
+    font-size: 10px;
+  }
+  .logo-block {
+    margin-top: 80px;
+  }
+  .article-block {
+    margin-top: 50px;
+  }
+  .article-link {
+    font-size: 14px;
+  }
+  .article-section-revers,
+  .article-section {
+    padding: 0;
+  }
+  .interactive-block {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+  .interactive-box {
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .localization-card,
+  .cake-group {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-group-box {
+    border: none;
+    margin: 0;
+  }
+  .cake-logo-group {
+    padding-bottom: 51px;
+  }
+  .footer-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .categori-box,
+  .cake-block,
+  .revolut-block {
+    justify-content: center;
+  }
+  .category {
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .logo-box-footer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 520px) {
+  .nav-btn-1,
+  .nav-btn-2 {
+    width: 90px;
+    padding: 0;
+    margin-left: 0;
+  }
+  .nav-btn-1 {
+    margin-bottom: 10px;
+  }
+  .nav-btn {
+    display: block;
+  }
 }
