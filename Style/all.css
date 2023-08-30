@@ -693,6 +693,9 @@ footer {
   .article-section {
     padding: 0;
   }
+  .article-content {
+    padding: 121px 0px 166px 190px;
+  }
   .interactive-block {
     margin-top: 0px;
     padding-bottom: 0px;
