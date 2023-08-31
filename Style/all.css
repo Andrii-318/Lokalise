@@ -693,11 +693,8 @@ footer {
     padding: 0;
     justify-content: center;
   }
-  .article-txt {
-    max-width: 457px;
-  }
   .article-content {
-    padding: 77px 78px 158px 66px;
+    padding: 77px 15px 158px 15px;
     max-width: 518px;
     max-height: 518px;
   }
